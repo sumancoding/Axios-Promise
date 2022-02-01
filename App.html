@@ -1,0 +1,55 @@
+<!-- A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+A JavaScript Promise Object contains both the producing code and calls to the consuming code. Deals with asynchronous operation in Js.
+
+Promise Status:
+Pending: Initial State, Not yet Fulfilled or Rejected
+Fulfilled/Resolved: Promise Completed (.then(), .finally())
+Rejected: Promise Failed  (.then(), .catch(), .finally())
+
+Pending promise can either be resolved with a value or rejected with a reason
+When either of these opton happens, the associated handlers queued up by promise's then method are called
+A promise is said to be settled if it either Resolved or rejected, but not Pending 
+Syntax : 
+const promiseObj = new Promise ((resolve, reject) => {
+    Do asynchronous operation
+    resolve(value)
+    reject (Error)
+})
+
+-->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         //Promise Catch   //producing code and consuming code
+//         const promiseObj = new Promise ((resolve, reject) => {
+//             let req = false
+//             if(req == true) {
+//                 resolve({'name': 'Suman',
+//             'roll': 12344})
+//             } else {
+// reject(['Shallow', 'fiesta'])
+//             }
+//         }).then(
+//             (value)=> {console.log(value)},
+//             //(error) => { console.log(error) },
+//         ). catch((error) => { console.log(error) })
+
+const promiseObj = new Promise((resolve, reject) => {
+    let num= 10;
+    resolve(num)
+}).then((data) => {console.log(data);
+return  + 10}).then((data) => {
+    {console.log(data)}
+})
+
+    </script>
+</body>
+</html> -->
