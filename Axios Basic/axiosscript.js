@@ -1,5 +1,26 @@
 document.getElementById('btn').addEventListener('click', makerequest);
 
+//Promise Then / Error Handling
+// function makerequest (){
+//     console.log('Button Clicked')
+//     axios.get('data.json').then((res) => {
+//         console.log(res)
+//         console.log(res.data)
+//     }).catch((error) =>{console.log(error)})
+// }
+
+//Showing Data in browser
+
+// function makerequest (){
+//     console.log('Button Clicked')
+//     axios.get('data.json').then((res) => {
+//         console.log(res);
+//         console.log(res.data);
+//         document.getElementById('divdata1').innerText = res.data.roll
+//         document.getElementById('divdata2').innerText = res.data.name
+//     }).catch((error) =>{console.log(error)})
+//     }
+
 
 //Fetch Data from txt file
 // function makerequest () {
@@ -46,16 +67,17 @@ document.getElementById('btn').addEventListener('click', makerequest);
 
 //Async and await | Error Handling
 
-async function makerequest() {
-  try{
-        console.log('Button Clicked');
-  const res = await axios.get('data1.txt')
-  console.log(res)
-  console.log(res.data)
-  } catch(error) {
-      console.log(error)
-  }
-}
+// async function makerequest() {
+//   try{
+//         console.log('Button Clicked');
+//   const res = await axios.get('data.json')
+//   console.log(res)
+//   console.log(res.data)
+//   document.getElementById('divdata1').innerText= res.data.name
+//   } catch(error) {
+//       console.log(error)
+//   }
+// }
  
 
 // function makerequest (){
